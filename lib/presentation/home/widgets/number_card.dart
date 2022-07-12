@@ -34,17 +34,19 @@ class NumberCard extends StatelessWidget {
               ),
             ],
           ),
-          Align(
-            alignment: Alignment.bottomLeft,
+          Positioned(
+            bottom: -25,
+            left: 1,
             child: BorderedText(
-              strokeWidth: 10.0,
+              strokeWidth: 5.0,
+              strokeColor: kWhiteColor,
               child: Text(
                 "${index + 1}",
                 style: const TextStyle(
-                  color: kWhiteColor,
-                  fontSize: 130,
+                  color: kBlackColor,
+                  fontSize: 100,
+                  fontWeight: FontWeight.bold,
                   decoration: TextDecoration.none,
-                  decorationColor: Colors.white,
                 ),
               ),
             ),
