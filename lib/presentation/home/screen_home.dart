@@ -63,7 +63,7 @@ class ScreenHome extends StatelessWidget {
                     ? AnimatedContainer(
                         color: Colors.black.withOpacity(0.5),
                         width: double.infinity,
-                        height: 140,
+                        height: 100,
                         duration: const Duration(
                           microseconds: 1000,
                         ),
@@ -74,7 +74,7 @@ class ScreenHome extends StatelessWidget {
                               children: [
                                 Image.asset(
                                   'assets/logos/netflix.png',
-                                  height: 80,
+                                  height: 60,
                                   fit: BoxFit.cover,
                                 ),
                                 const Spacer(),
@@ -82,14 +82,13 @@ class ScreenHome extends StatelessWidget {
                                   onPressed: () {},
                                   icon: const Icon(
                                     Icons.cast,
-                                    size: 40,
+                                    size: 25,
                                     color: kWhiteColor,
                                   ),
                                 ),
-                                kWidth10,
                                 Container(
                                   height: 25,
-                                  width: 30,
+                                  width: 25,
                                   color: kBlueColor,
                                 ),
                                 kWidth10,

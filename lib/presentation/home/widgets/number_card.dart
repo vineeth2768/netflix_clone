@@ -35,7 +35,7 @@ class NumberCard extends StatelessWidget {
             ],
           ),
           Positioned(
-            bottom: -25,
+            bottom: -20,
             left: 1,
             child: BorderedText(
               strokeWidth: 5.0,

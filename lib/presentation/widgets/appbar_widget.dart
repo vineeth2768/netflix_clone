@@ -23,7 +23,7 @@ class AppBarWidget extends StatelessWidget {
             onPressed: () {},
             icon: const Icon(
               Icons.cast,
-              size: 30,
+              size: 25,
               color: kWhiteColor,
             ),
           ),

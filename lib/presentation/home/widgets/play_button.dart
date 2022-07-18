@@ -16,7 +16,7 @@ class PlayButton extends StatelessWidget {
       icon: const Icon(
         Icons.play_arrow,
         color: kBlackColor,
-        size: 40,
+        size: 25,
       ),
       label: const Padding(
         padding: EdgeInsets.symmetric(horizontal: 10),

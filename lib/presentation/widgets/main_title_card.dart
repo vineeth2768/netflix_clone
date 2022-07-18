@@ -13,8 +13,11 @@ class MainTitleCard extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        MainTitle(
-          title: title,
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: MainTitle(
+            title: title,
+          ),
         ),
         kHeight10,
         LimitedBox(

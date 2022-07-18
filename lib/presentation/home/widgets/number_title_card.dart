@@ -13,8 +13,11 @@ class NumberCardWidegt extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const MainTitle(
-          title: 'Top 10 Tv Shows In India Today ',
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 10),
+          child: MainTitle(
+            title: 'Top 10 Tv Shows In India Today ',
+          ),
         ),
         kHeight10,
         LimitedBox(
