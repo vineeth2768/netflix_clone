@@ -15,7 +15,7 @@ class BackGroundCard extends StatelessWidget {
       children: [
         Container(
           width: double.infinity,
-          height: 700,
+          height: 600,
           decoration: const BoxDecoration(
             color: kWhiteColor,
             image: DecorationImage(
