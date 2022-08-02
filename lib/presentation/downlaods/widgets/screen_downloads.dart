@@ -1,6 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:netflix_clone/application/downloads/downloads_bloc.dart';
 import 'package:netflix_clone/core/colors/colors.dart';
 import 'package:netflix_clone/core/constants.dart';
 import 'package:netflix_clone/presentation/widgets/appbar_widget.dart';
@@ -39,7 +41,15 @@ class Section2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // WidgetsBinding.instance.addPostFrameCallback((_) {
+    //   BlocProvider.of<DownloadsBloc>(context)
+    //       .add(const DownloadsEvent.getDownlaodsImage());
+    // });
+    BlocProvider.of<DownloadsBloc>(context)
+        .add(const DownloadsEvent.getDownlaodsImage());
+
     final Size size = MediaQuery.of(context).size;
+
     return Column(
       children: [
         const Text(
